@@ -49,9 +49,15 @@ const Projects = ({ isDark }) => {
                                     <button className="p-2 bg-white rounded-full hover:bg-pink-50 transition-colors">
                                         <Github size={20} className="text-gray-900" />
                                     </button>
-                                    <button className="p-2 bg-white rounded-full hover:bg-pink-50 transition-colors">
+                                    <a
+                                        href="https://upgradist.vercel.app/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="p-2 bg-white rounded-full hover:bg-pink-50 transition-colors"
+                                        aria-label="Visit Upgradist Live Site"
+                                    >
                                         <ExternalLink size={20} className="text-gray-900" />
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
 
@@ -77,8 +83,8 @@ const Projects = ({ isDark }) => {
                                         <span
                                             key={i}
                                             className={`px-3 py-1 text-xs font-medium rounded-full ${isDark
-                                                ? 'bg-gray-700 text-pink-300'
-                                                : 'bg-pink-50 text-pink-600'
+                                                    ? 'bg-gray-700 text-pink-300'
+                                                    : 'bg-pink-50 text-pink-600'
                                                 }`}
                                         >
                                             {tech}
